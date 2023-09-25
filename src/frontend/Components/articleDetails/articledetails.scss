@@ -1,0 +1,186 @@
+.article-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f3f3f3;
+    .article-details__container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5em;
+
+        .article-details__container__left{
+            
+            padding: 1em;
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .article-details__container__left__title{
+                margin-bottom: 0.5em;
+                font-weight: bold;
+                width: 100%;
+                h2{
+                    margin-bottom: 0;
+                    align-self: self-start;
+                    font-family: 'Jost' , sans-serif;
+                    font-size: 3em;
+                    font-weight: 600;
+                }
+            }
+            .article-details__container__left__image{
+                width: 100%;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+            .article-details__container__left__content{
+                width: 100%;
+                
+                h3{
+                    font-family: 'Jost' , sans-serif;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    margin: 0.5em 0;
+                }
+                p{
+                    font-family: 'Jost' , sans-serif;
+                    font-size: 1em;
+                    line-height: 1.5em;
+                    text-align: justify;
+                    color: #777777b7;
+                    margin-top: 0;
+                }
+            }
+            .article-details__container__left__chapters{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap:1em;
+                .article-details__container__left__chapter__title{
+                    align-self: self-start;
+                    font-family: 'Jost' , sans-serif;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    margin-top: 0.5em;
+                    margin-bottom: -0.2em;
+                }
+            }
+        }
+        .article-details__container__right{
+            
+            height: 100vh;
+            width: 250px;
+            position: relative;
+            
+            .article-details__container__right__inner{
+                
+                position: sticky;
+                top: 5px;
+                border-radius: 10px;
+                background-color: #fff;
+                width: 100%;
+                overflow: hidden;
+                
+                h3{
+                    width: 100%;
+                    font-family: 'Jost' , sans-serif;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    margin: 0;
+                    text-align: center;
+                    background-color:  rgb(0, 72, 173, 0.95);
+                    padding: 1em 0;
+                    color: #fff
+                }
+                .article-info{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    margin: 0;
+                    margin-top: 16px;
+                    padding: 0;
+
+                    .article-info-icon{
+                        color: rgb(0, 72, 173, 0.95);
+                        font-size: 1.5em;
+                    }
+                    li{
+                        list-style-type: none;
+                        border-bottom: 1px solid #ddd;
+                        display: flex;
+                        flex-direction:  row;
+                        margin-top: 1em;
+                        align-items: center;
+                        gap:1em;
+                        padding: 15px;
+                        padding-top: 0;
+                        font-size: 0.9rem;
+                        strong{
+                            font-family: 'Jost' , sans-serif;
+                            font-size: 1rem;
+                            font-weight: 600;
+                        }
+                        span{
+                            font-family: 'Roboto' , sans-serif;
+                            font-size: 0.9rem;
+                            font-weight: 400;
+                            color: #777;
+                        }
+                    }
+                    .article-info__btn{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        button{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 0.5em;
+                            width: 100%;
+                            height: 100%;
+                            padding: 1em;
+                            border: none;
+                            background-color: rgb(0, 72, 173, 0.95);
+                            color : #fff;
+                            font-size: 18px;
+                            font-family: 'Jost' , sans-serif;
+                            border-radius: 10px;   
+                            transition: all 0.1s ease-in-out;
+                            
+                            .article-info__btn__icon{
+                                font-size: 1.6em;
+                            }
+
+                            &:hover{
+                                background-color: rgb(0, 72, 173, 0.8);
+                            }
+                            &:active{
+                                background-color: rgb(0, 72, 173, 0.7);
+                            }
+                        }
+                    }
+                    li:first-child{
+                        margin-top: 0;
+                    }
+                    li:last-child{
+                        border-bottom: none;
+                    }
+                    
+                }
+            }
+        }
+
+    }
+}
