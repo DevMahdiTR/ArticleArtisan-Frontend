@@ -1,4 +1,4 @@
-export const BaseUrl = "http://localhost:8080/api/v1";
+export const BaseUrl = "https://ruspina.up.railway.app/api/v1";
 
 export const APIS = {
 
