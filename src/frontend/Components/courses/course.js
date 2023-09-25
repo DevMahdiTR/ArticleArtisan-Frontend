@@ -52,7 +52,7 @@ const Course = () => {
     <div className='menu'>
       <div className='menu__container'>
         <div className='menu__container__categories'>
-            {courses.length === 0 ? <img src = {noData} /> : courses}
+            {courses.length === 0 ? <img alt=' ' src = {noData} /> : courses}
         </div>
       </div>
       

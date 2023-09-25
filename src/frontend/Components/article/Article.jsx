@@ -76,7 +76,7 @@ const Article = () => {
             dataIndex: 'image',
             key: 'image',
             render: (imageSrc) => (
-                <img src={imageSrc} style={{ width: '100px', borderRadius: '5px' }} />
+                <img src={imageSrc}  alt = "" style={{ width: '100px', borderRadius: '5px' }} />
             ),
         },
         {
@@ -305,7 +305,7 @@ const Article = () => {
         }
     }
     const deleteArticleByIdData = async (id) => {
-        const res = await deleteArticleById(id)
+        await deleteArticleById(id)
             .then((res) => {
                 setDataSource(
                     dataSource.filter((item) => item.key !== id)
@@ -588,6 +588,8 @@ const Article = () => {
         fetchAllArticlesData(pagination.current);
 
     }, [pagination]);
+
+ 
 
 
     return (

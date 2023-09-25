@@ -36,7 +36,7 @@ const Poster = () => {
             dataIndex: 'image',
             key: 'image',
             render: (imageSrc) => (
-                <img src={imageSrc} style={{ width: '150px', borderRadius: '5px' }} />
+                <img alt=' ' src={imageSrc} style={{ width: '150px', borderRadius: '5px' }} />
             ),
         },
         {

@@ -12,7 +12,6 @@ const SignUp = () => {
     phoneNumber: '',
     password: ''
   });
-  const [isSignUpSuccessful, setIsSignUpSuccessful] = useState(false);
 
   const regexs = {
     passwordRegex: /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\S+$).{8,}$/,
@@ -60,8 +59,7 @@ const SignUp = () => {
 
   const register = async () => {
     try {
-      const response = await RegisterService(signupData);
-      
+      await RegisterService(signupData);
       notification.info({ message: 'Please check your email for verification.' , placement: 'topRight', duration: 30});
       message.success('Sign up successful! ');
     } catch (error) {
@@ -71,7 +69,6 @@ const SignUp = () => {
   }
   const onFinish = (values) => {
     register(signupData);
-    setIsSignUpSuccessful(true);
   };
 
 
