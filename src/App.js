@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Provider } from "react-redux";
-import { AuthProvider } from "./frontend/Components/authContext/authContext";
 import store from './frontend/redux/store';
 import {
   Login,
@@ -21,7 +20,6 @@ function App() {
     <div className="App">
       <Provider store={store}>
         <Loader />
-        <AuthProvider>
           <Router>
             <ScrollToTop />
             <Layout>
@@ -44,7 +42,6 @@ function App() {
             </Routes>
             </Layout>
           </Router>
-        </AuthProvider>
       </Provider>
     </div>
   );

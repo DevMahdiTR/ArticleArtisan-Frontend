@@ -12,7 +12,6 @@ export {default as Course} from './courses/course';
 export {default as PageContent} from './pageContent/pageContent';
 export {default as Slider} from './slider/Slider';
 export {default as Card} from './card/Card';
-export {default as BreadCrumb} from './breadcrumb/BreadCrumb';
 export {default as ArticleDetails} from './articleDetails/ArticleDetails';
 export {default as Chapter} from './chapter/Chapter';
 export {default as ScrollToTop} from './scrolltotop/ScrollToTop';

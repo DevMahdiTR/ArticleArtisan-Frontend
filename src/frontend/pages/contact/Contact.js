@@ -36,7 +36,7 @@ function Contact() {
     return(
         <><div className="contact">
             <div className="leftSide" >
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d396.8680457215902!2d9.87000165841973!3d37.27274634245744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e31fcd2b81a37f%3A0x99e04275dc6a4893!2sRuspina%20Formation%20Bizerte!5e0!3m2!1sen!2stn!4v1694264481099!5m2!1sen!2stn" className="contact__left__map"   allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d396.8680457215902!2d9.87000165841973!3d37.27274634245744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e31fcd2b81a37f%3A0x99e04275dc6a4893!2sRuspina%20Formation%20Bizerte!5e0!3m2!1sen!2stn!4v1694264481099!5m2!1sen!2stn" className="contact__left__map"  title="ruspina location"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div className="rightSide">
                 <h1>Contact Us</h1>

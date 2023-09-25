@@ -1,5 +1,5 @@
 import './article.scss';
-import { Modal, Input, Button, DatePicker, Switch, Select, message, Upload, Form, Table, List, notification } from 'antd';
+import { Modal, Input, Button, DatePicker, Switch, Select, message, Upload, Form, Table, List} from 'antd';
 import { useState, useEffect } from 'react';
 import { addArticle, fetchArticleImageById, searchArticle, fetchAllArticles, updateArticleById, deleteArticleById } from '../../service/article/ArticleService';
 import { fetchAllCategories } from '../../service/categorie/CategorieService';
@@ -76,7 +76,7 @@ const Article = () => {
             dataIndex: 'image',
             key: 'image',
             render: (imageSrc) => (
-                <img src={imageSrc} alt="Image" style={{ width: '100px', borderRadius: '5px' }} />
+                <img src={imageSrc} style={{ width: '100px', borderRadius: '5px' }} />
             ),
         },
         {
@@ -259,7 +259,7 @@ const Article = () => {
         formatData.append('jsonArticle', JSON.stringify(jsonArticle));
         formatData.append('categorieId', categorieId);
         try {
-            const res = await updateArticleById(id, formatData);
+            await updateArticleById(id, formatData);
             setDataSource(
                 dataSource.map(
                     item => item.key === id ?
@@ -587,7 +587,7 @@ const Article = () => {
         fetchAllCategoriesData();
         fetchAllArticlesData(pagination.current);
 
-    }, [pagination.current]);
+    }, [pagination]);
 
 
     return (

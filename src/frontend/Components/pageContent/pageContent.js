@@ -1,9 +1,10 @@
-import React, { useContext, useEffect } from 'react';
-import { useAuth } from '../authContext/authContext';
+import {useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const PageContent = () => {
-  const { user} = useAuth();
+
+  const { user} = useSelector((state) => state.auth);
   
   const navigate = useNavigate();
 

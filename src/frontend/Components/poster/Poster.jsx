@@ -3,9 +3,7 @@ import { useEffect, useState } from 'react';
 import { Table, Button, Modal, Form, Input, Upload, message } from 'antd';
 
 import { HighlightOffIcon } from '../../assets/index'
-import { fetchAllAffiche, fetchAfficheImageById, searchAffiche, updateAfficheById, deleteAfficheById, addAffiche } from '../../service/poster/PosterService'
-import { Label } from '@mui/icons-material';
-
+import { fetchAllAffiche, fetchAfficheImageById, searchAffiche, updateAfficheById, deleteAfficheById, addAffiche } from '../../service/poster/PosterService';
 
 const getBase64 = (file) =>
     new Promise((resolve, reject) => {
@@ -38,7 +36,7 @@ const Poster = () => {
             dataIndex: 'image',
             key: 'image',
             render: (imageSrc) => (
-                <img src={imageSrc} alt="Image" style={{ width: '150px', borderRadius: '5px' }} />
+                <img src={imageSrc} style={{ width: '150px', borderRadius: '5px' }} />
             ),
         },
         {
@@ -93,7 +91,7 @@ const Poster = () => {
         formatData.append('image', image);
         formatData.append('jsonAfficheDetails', JSON.stringify(jsonAfficheDetails));
         try {
-            const res = await updateAfficheById(id, formatData);
+            await updateAfficheById(id, formatData);
             setDataSource(
                 dataSource.map(
                     item => item.key === id ?
@@ -124,7 +122,7 @@ const Poster = () => {
         }
     }
     const deletePosterById = async (id) => {
-        const res = await deleteAfficheById(id)
+        await deleteAfficheById(id)
             .then((res) => {
                 setDataSource(dataSource.filter(item => item.id !== id));
                 setFiltredData(filtredData.filter(item => item.id !== id));
@@ -293,7 +291,7 @@ const Poster = () => {
     }
     useEffect(() => {
         fetchAllAfficheData(pagination.current);
-    }, [pagination.current])
+    }, [pagination])
     return (
         <div className='poster'>
             <div className='poster__container'>

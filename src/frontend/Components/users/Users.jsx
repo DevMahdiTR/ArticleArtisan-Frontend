@@ -59,7 +59,7 @@ const Users = () => {
 
   const enableOrDisableUser = async (id, state) => {
     try {
-      const res = await enableUserById(id, state);
+      await enableUserById(id, state);
       setDataSource(
         dataSource.map(
           (item) => item.key === id ?

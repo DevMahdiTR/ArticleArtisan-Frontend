@@ -1,5 +1,4 @@
 import './loader.scss';
-import { useSelector } from 'react-redux';
 import  {connect} from 'react-redux';
 import { Spin } from 'antd';
 const Loader = ({state}) => {

@@ -5,8 +5,6 @@ import { RefreshToken } from '../../service/auth/AuthService';
 import store from '../../redux/store';
 import { LoaderActions } from '../../redux/index'
 
-const unauthroizedCode = [403];
-
 const Interceptor = axios.create({
     baseURL: BaseUrl,
     timeout: 60000
