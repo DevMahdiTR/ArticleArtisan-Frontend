@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4d8bde32.css",
+    "main.js": "/static/js/main.01e4b39e.js",
+    "static/media/cours__bg.png": "/static/media/cours__bg.27b7f596cb917cac2a73.png",
+    "static/media/noData.jpg": "/static/media/noData.4bf2a63b10e5d64c7cfd.jpg",
+    "static/media/about__bg.jpg": "/static/media/about__bg.03affcde6c5151516178.jpg",
+    "static/media/nav_logo.png": "/static/media/nav_logo.b6c7a25c5afb2945c35d.png",
+    "index.html": "/index.html",
+    "main.4d8bde32.css.map": "/static/css/main.4d8bde32.css.map",
+    "main.01e4b39e.js.map": "/static/js/main.01e4b39e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d8bde32.css",
+    "static/js/main.01e4b39e.js"
+  ]
+}
