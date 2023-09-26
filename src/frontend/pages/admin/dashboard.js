@@ -37,7 +37,7 @@ const DashBoard = () => {
   } = theme.useToken();
 
   const [selectedNavItem, setSelectedNavItem] = useState(0);
-
+  const content = [<Users/> , <Categorie/> ,<Article/> , <Poster/>]
   return (
     <div className="dashboard">
      <Layout hasSider>
@@ -61,10 +61,7 @@ const DashBoard = () => {
       <Layout className="site-layout" style={{ marginLeft: 10}}>
         <Content style={{ overflow: 'initial' , height: '100vh'}}>
           <div style={{ padding: 24, textAlign: 'center', background: colorBgContainer, height: '100vh' }}>
-            {selectedNavItem === 0 && <div><Users/></div>}
-            {selectedNavItem === 1 && <div><Categorie/></div>}
-            {selectedNavItem === 2 && <div><Article/></div>}
-            {selectedNavItem === 3 && <div><Poster/></div>}
+            {content[selectedNavItem]}
           </div>
         </Content>
       </Layout>
