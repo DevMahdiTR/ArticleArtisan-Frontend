@@ -61,7 +61,7 @@ const DashBoard = () => {
       <Layout className="site-layout" style={{ marginLeft: 10}}>
         <Content style={{ overflow: 'initial' , height: '100vh'}}>
           <div style={{ padding: 24, textAlign: 'center', background: colorBgContainer, height: '100vh' }}>
-            {content[selectedNavItem]}
+            {content[2]}
           </div>
         </Content>
       </Layout>
