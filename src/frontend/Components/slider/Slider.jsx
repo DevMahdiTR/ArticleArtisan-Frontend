@@ -91,9 +91,7 @@ const Slider = ({ slides }) => {
 
                             >
                                 <img src={slide.image} alt="" />
-                                <div className="slider__inner__slide__description">
-                                    <span>{slide.title || "No Data"}</span>
-                                </div>
+                                
                             </div>))
                 }
             </div>

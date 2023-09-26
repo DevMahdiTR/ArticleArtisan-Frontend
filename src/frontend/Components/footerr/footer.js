@@ -20,14 +20,14 @@ const AppFooter = () => {
           <div style={{ padding: '20px' }}>
             <h3>Follow us</h3>
             <div>
-              <a href="https://www.facebook.com/ruspinaformation" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/ruspinaformationbizerte/" target="_blank" rel="noopener noreferrer">
                 <FacebookOutlined style={{ fontSize: '20px', marginRight: '10px' }} />
               </a>
              
-              <a href="https://www.instagram.com/ruspina_formation/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/rus__pina/" target="_blank" rel="noopener noreferrer">
                 <InstagramOutlined style={{ fontSize: '20px', marginRight: '10px' }} />
               </a>
-              <a href="https://www.linkedin.com/company/ruspina-centre-de-formation/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/ruspina-bizerte/" target="_blank" rel="noopener noreferrer">
                 <LinkedinOutlined style={{ fontSize: '20px' }} />
               </a>
             </div>
