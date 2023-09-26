@@ -197,7 +197,7 @@ function Categorie() {
 
     useEffect(() => {
         fetchAllCategoriesData(pagination.current);
-    }, [pagination]);
+    }, [pagination.current]);
 
 
     return (

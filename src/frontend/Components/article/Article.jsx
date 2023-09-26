@@ -587,7 +587,7 @@ const Article = () => {
         fetchAllCategoriesData();
         fetchAllArticlesData(pagination.current);
 
-    }, [pagination]);
+    }, [pagination.current]);
 
  
 

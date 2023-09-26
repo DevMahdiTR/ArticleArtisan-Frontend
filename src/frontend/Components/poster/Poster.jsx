@@ -291,7 +291,7 @@ const Poster = () => {
     }
     useEffect(() => {
         fetchAllAfficheData(pagination.current);
-    }, [pagination])
+    }, [pagination.current])
     return (
         <div className='poster'>
             <div className='poster__container'>
